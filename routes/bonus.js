@@ -19,6 +19,7 @@ router.get('/', function(req, res, next) {
 
   res.write(`Math.clz32b() applied to ${input} is ${output}`);
 
+  res.send();
 });
 
 module.exports = router;
